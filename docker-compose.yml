@@ -25,6 +25,8 @@ services:
       - ${MYSQL_CONF-./config/mysql/my.cnf}:/etc/mysql/my.cnf
     environment:
       MYSQL_ROOT_PASSWORD: secret
+    ports:
+      - "3307:3306"
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: 'phpmyadmin'

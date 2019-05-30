@@ -6,3 +6,4 @@
 /www/**
 .DS_Store
 install_addon.sh
+.idea/
