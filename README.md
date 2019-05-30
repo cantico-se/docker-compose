@@ -14,15 +14,12 @@ This is a basic LAMP stack environment built using Docker Compose. It consists f
 Clone this repository on your local computer. Run the `docker-compose up -d`.
 
 ```shell
-git clone https://github.com/sprintcube/docker-compose-lamp.git
-cd docker-compose-lamp/
-git fetch --all
-git checkout 5.6.x
+git clone https://github.com/cantico-se/docker-compose.git
+cd docker-compose/
 docker-compose up -d
 ```
-> Please make sure that you are using `5.6.x` branch.
 
-Your LAMP stack is now ready!! You can access it via `http://localhost`.
+Your LAMP stack is now ready!! You can access it via `http://localhost:8080`.
 
 ## Configuration
 
@@ -58,7 +55,7 @@ This will be used to store Apache logs. The default value for this is `./logs/my
 
 ## Web Server
 
-Apache is configured to run on port 80. So, you can access it via `http://localhost`.
+Apache is configured to run on port 80. So, you can access it via `http://localhost:8080`.
 
 #### Apache Modules
 
@@ -105,9 +102,9 @@ By default following extensions are installed.
 
 phpMyAdmin is configured to run on port 8080. Use following default credentials.
 
-http://localhost:8080/  
+http://localhost:8081/  
 username: root  
-password: tiger
+password: secret
 
 ## Redis
 
